@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>😂 Random Meme Generator</h1>
+        <input
+            type="text"
+            id="topInput"
+            placeholder="Enter Top Text"
+        >
+        <input
+            type="text"
+            id="bottomInput"
+            placeholder="Enter Bottom Text"
+        >
+
+        <div class="buttons">
+
+            <button onclick="generateMeme()">
+                Generate Meme
+            </button>
+
+            <button onclick="randomMeme()">
+                Random Template
+            </button>
+        </div>
+        <div class="meme-box">
+
+            <img
+                src="meme1.jpg"
+                id="memeImage"
+                alt="Meme"
+            >
+
+            <div class="top-text" id="topText"></div>
+
+            <div class="bottom-text" id="bottomText"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
